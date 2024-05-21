@@ -1,0 +1,217 @@
+body {
+  font-family: "Poetsen One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: blanchedalmond;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 1.3em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+img {
+  margin: 0 150px;
+  text-align: center;
+}
+#weight {
+  margin-bottom: 20px;
+  display: inline-flex;
+  font-size: 1em;
+}
+#weightt {
+  font-size: 2em;
+}
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-list li {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.feature-list span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 300px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec0505;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #349b04;
+  transform: scale(1.1);
+}
+
+.icon-button:active {
+  background-color: #620347;
+  transform: scale(0.9);
+}
+
+.icon {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  object-fit: contain;
+}
+.price-table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background-color: rgb(165, 166, 164);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 30%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.price-card h2 {
+  margin-top: 0;
+  color: #0f0e0e;
+}
+
+.price-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price-card ul li {
+  background-color: #7b7c7c;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.iconic {
+  color: black;
+  outline: none;
+}
+button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.nutrition-image {
+  width: 100%;
+  max-width: 600px; /* Максимальная ширина */
+  height: auto;
+  border-radius: 10px; /* Скругленные углы */
+  margin-bottom: 20px; /* Отступ снизу */
+}

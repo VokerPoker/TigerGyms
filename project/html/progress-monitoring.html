@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Monitoring</title>
+    <link rel="stylesheet" href="/css/progress.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Progress Monitoring</h1>
+        <p>
+          Progress monitoring is the ongoing, frequent collection and use of
+          formal data in order to (1) assess students’ performance, (2) quantify
+          a student's rate of improvement or responsiveness to instruction or
+          intervention, and (3) evaluate the effectiveness of instruction and
+          intervention using valid and reliable measures. Educators use measures
+          that are appropriate for the student’s grade and/or skill level.
+        </p>
+        <p>
+          Click on the steps below to learn more and find relevant resources.
+        </p>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button">
+              Step 1. Design Progress Monitoring Process
+            </button>
+            <div class="accordion-content">
+              <p>
+                Teams clarify the purpose of progress monitoring and design a
+                process that describes how progress monitoring data will be
+                collected and stored, how frequently progress will be monitored
+                across the tiers, and how data will be analyzed and used to make
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              Step 2. Select Progress Monitoring Tools
+            </button>
+            <div class="accordion-content">
+              <p>
+                When selecting progress monitoring tools, teams consider their
+                needs, context, and priorities as well as the technical adequacy
+                of the measures. The resources below can help teams become
+                informed consumers to select academic and behavioral progress
+                monitoring tools.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">Step 3. Train Staff</button>
+            <div class="accordion-content">
+              <p>
+                Staff participate in ongoing professional learning related to
+                progress monitoring. The professional learning should focus on
+                ensuring that all staff understand the purpose of progress
+                monitoring, have the knowledge and skills to implement the
+                progress monitoring process with fidelity, and use progress
+                monitoring data to make decisions about student responsiveness
+                to intervention.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              Step 4. Develop Student Progress Monitoring Plans
+            </button>
+            <div class="accordion-content">
+              <p>
+                Teams develop student progress monitoring plans that include the
+                selected measure, frequency of data collection, baseline data,
+                goal based on a validated goal setting strategy, decision-rules,
+                and data review dates.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              Step 5. Collect Progress Monitoring Data and Monitor Fidelity
+            </button>
+            <div class="accordion-content">
+              <p>
+                To limit inconsistencies in administration and errors in scoring
+                and data entry, teams develop a clear plan for ensuring fidelity
+                of the progress monitoring process. These resources highlight
+                considerations for implementing progress monitoring with
+                fidelity and support implementation.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              Step 6. Analyze Progress Monitoring Data
+            </button>
+            <div class="accordion-content">
+              <p>
+                Grade level and intervention teams use progress monitoring data
+                to make decisions about student responsiveness to interventions
+                and supports and make adjustments when needed. Teams can review
+                data patterns and compare students’ rate of improvement to
+                growth necessary to meet their goals. District and school teams
+                may use systems level progress monitoring data to assess the
+                effectiveness of district and school level interventions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="goBack()">Back</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Fitness App. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const accButtons = document.querySelectorAll(".accordion-button");
+        accButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const accContent = this.nextElementSibling;
+            this.classList.toggle("active");
+            if (accContent.style.maxHeight) {
+              accContent.style.maxHeight = null;
+            } else {
+              accContent.style.maxHeight = accContent.scrollHeight + "px";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

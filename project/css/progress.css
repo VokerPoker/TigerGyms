@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2a2828;
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #2a2828;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #161515;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-button:hover,
+.accordion-button.active {
+  background-color: #524f4f;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 15px;
+  background-color: rgb(85, 163, 133);
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+footer {
+  padding: 10px;
+  background-color: #a7a1a1;
+}
